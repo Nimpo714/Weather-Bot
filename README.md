@@ -25,5 +25,5 @@
 
 ### 1. Клонирование репозитория
 ```bash
-git clone <your-repo-url>
-cd <your-project-folder>
+git clone https://github.com/Nimpo714/Weather-Bot.git
+cd Weather-Bot
