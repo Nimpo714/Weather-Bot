@@ -47,9 +47,11 @@ python3 -m venv .venv
 pip install -r requirements.txt
 ```
 ## src/tokens.py
-bot = ваш_телеграм_токен
-open_weather_map_token = ваш_openweather_api_key
-time_zone_token = ваш_api_mapy_time_zone_token
+```python
+bot = "ваш_телеграм_токен"
+open_weather_map_token = "ваш_openweather_api_key"
+time_zone_token = "ваш_api_mapy_time_zone_token"
+```
 
 ---
 
@@ -62,7 +64,7 @@ python main.py
 
 ## 📁 Структура проекта
 - **├── main.py**
-- **|── src/**
+- **|── src**
 - **├── README.md**
 - **└── requirements.txt**
 
