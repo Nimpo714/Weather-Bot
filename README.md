@@ -27,17 +27,19 @@
 ```bash
 git clone https://github.com/Nimpo714/Weather-Bot.git
 cd Weather-Bot
-2. Установка зависимостей
-Обычная установка:
 ```
+### 2. Установка зависимостей
+Обычная установка:
 
 pip install aiogram==2.23.1
 Если возникли ошибки:
+pip install --force-reinstall -v "aiogram==2.23.1"
 
 ---
 
+
+### 3. Настройка переменных окружения
 ```bash
-3. Настройка переменных окружения
 Создайте .venv и установите
 python3 -m venv .venv
 .venv/Scripts/activate
@@ -50,7 +52,7 @@ time_zone_token = ваш_api_mapy_time_zone_token
 
 ---
 
-4. Запуск бота
+### 4. Запуск бота
 ```bash
 python main.py
 ```
