@@ -34,29 +34,41 @@ cd Weather-Bot
 pip install aiogram==2.23.1
 Если возникли ошибки:
 
+---
+
 ```bash
 3. Настройка переменных окружения
-Создайте файл .venv
-pip install aiogram==2.23.1 (если не сработало следующая комманда)
-pip install --force-reinstall -v "aiogram==2.23.1"
+Создайте .venv и установите
+python3 -m venv .venv
+.venv/Scripts/activate
+pip install -r requirements.txt
 ```
+## src/tokens.py
+bot = ваш_телеграм_токен
+open_weather_map_token = ваш_openweather_api_key
+time_zone_token = ваш_api_mapy_time_zone_token
 
-BOT_TOKEN=ваш_телеграм_токен
-WEATHER_API_KEY=ваш_openweather_api_key
+---
 
 4. Запуск бота
 ```bash
 python main.py
 ```
 
+---
+
 ## 📁 Структура проекта
-- **├── main.py**\n
-- **|── src/**\n
-- **├── README.md**\n
-- **└── requirements.txt**\n
+- **├── main.py**
+- **|── src/**
+- **├── README.md**
+- **└── requirements.txt**
+
+---
 
 ## 🤝 Вклад
 Буду рад любым Pull Request’ам и предложениям по улучшению проекта!
+
+---
 
 ## Нашли ошибку? Создайте issue 🐞
 
