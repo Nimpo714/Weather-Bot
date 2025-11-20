@@ -35,9 +35,10 @@ pip install aiogram==2.23.1
 Если возникли ошибки:
 
 ```bash
-pip install --force-reinstall -v "aiogram==2.23.1"
 3. Настройка переменных окружения
-Создайте файл .venv и добавьте в него ваш Telegram токен и ключ погодного API:
+Создайте файл .venv
+pip install aiogram==2.23.1 (если не сработало следующая комманда)
+pip install --force-reinstall -v "aiogram==2.23.1"
 ```
 
 BOT_TOKEN=ваш_телеграм_токен
