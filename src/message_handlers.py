@@ -1,6 +1,6 @@
 import requests
 from aiogram import types
-from src.api_tokens import open_weather_map, time_zone  # -- Токены
+from src.api_tokens import open_weather_map_token, time_zone_token  # -- Токены
 from src.api_func import open_weather_map_api, time_zone_api  # -- Функции для работы с api
 from src.servicec import joiner, \
     spliter  # -- Склеивание названий San Francisco -> San+Francisco и разделитель для timezone
@@ -21,7 +21,7 @@ async def weather_map(api_token: str, message: types.Message, ur_index: int):
             return KeyError
 
         # api функция которая выводит инфу о time zone
-        timezone = time_zone_api(weather_map_json['coord']['lon'], weather_map_json['coord']['lat'], token=time_zone)
+        timezone = time_zone_api(weather_map_json['coord']['lon'], weather_map_json['coord']['lat'], token=time_zone_token)
         timezone_split = spliter(timezone['timezone']['currentLocalTime'])  # Делим текущее время
         await message.answer(f"""
 City: {weather_map_json['name']}
@@ -60,7 +60,7 @@ async def handle_start(message: types.Message):
 
 
 async def weather(message: types.Message):
-    result = await weather_map(api_token=open_weather_map, message=message, ur_index=1)
+    result = await weather_map(api_token=open_weather_map_token, message=message, ur_index=1)
     if result == IndexError:
         await message.reply('Вы не указали город!\n/w {город}\nили просто - \n{город}')
     elif result == KeyError:
@@ -72,7 +72,7 @@ async def weather(message: types.Message):
 
 
 async def none_command(message: types.Message):
-    result = await weather_map(api_token=open_weather_map, message=message, ur_index=0)
+    result = await weather_map(api_token=open_weather_map_token, message=message, ur_index=0)
     if result == KeyError:
         await message.reply('''
 Комманда или город не найдены!
