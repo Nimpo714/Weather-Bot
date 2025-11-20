@@ -36,13 +36,15 @@ pip install aiogram==2.23.1
 
 ```bash
 3. Настройка переменных окружения
-Создайте файл .venv
-pip install aiogram==2.23.1 (если не сработало следующая комманда)
-pip install --force-reinstall -v "aiogram==2.23.1"
+Создайте .venv и установите
+python3 -m venv .venv
+.venv/Scripts/activate
+pip install -r requirements.txt
 ```
-
-BOT_TOKEN=ваш_телеграм_токен
-WEATHER_API_KEY=ваш_openweather_api_key
+## src/tokens.py
+bot = ваш_телеграм_токен
+open_weather_map_token = ваш_openweather_api_key
+time_zone_token = ваш_api_mapy_time_zone_token
 
 4. Запуск бота
 ```bash
