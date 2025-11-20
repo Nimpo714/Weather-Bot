@@ -31,10 +31,11 @@ cd Weather-Bot
 ### 2. Установка зависимостей
 Обычная установка:
 
+```bash
 pip install aiogram==2.23.1
 Если возникли ошибки:
 pip install --force-reinstall -v "aiogram==2.23.1"
-
+```
 ---
 
 
