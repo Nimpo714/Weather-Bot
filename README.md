@@ -37,6 +37,7 @@ pip install -r requirements.txt
 Если возникли ошибки:
 ```bash
 pip install --force-reinstall -v "aiogram==2.23.1"
+pip install --force-reinstall -v "requests==2.23.1:
 ```
 ---
 
