@@ -32,8 +32,10 @@ cd Weather-Bot
 Обычная установка:
 
 ```bash
-pip install aiogram==2.23.1
+pip install -r requirements.txt
+```
 Если возникли ошибки:
+```bash
 pip install --force-reinstall -v "aiogram==2.23.1"
 ```
 ---
@@ -44,7 +46,6 @@ pip install --force-reinstall -v "aiogram==2.23.1"
 ```bash
 python3 -m venv .venv
 .venv/Scripts/activate
-pip install -r requirements.txt
 ```
 ## src/tokens.py
 ```python
