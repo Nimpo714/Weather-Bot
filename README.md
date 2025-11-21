@@ -40,8 +40,8 @@ pip install --force-reinstall -v "aiogram==2.23.1"
 
 
 ### 3. Настройка переменных окружения
-```bash
 Создайте .venv и установите
+```bash
 python3 -m venv .venv
 .venv/Scripts/activate
 pip install -r requirements.txt
