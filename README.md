@@ -28,7 +28,14 @@
 git clone https://github.com/Nimpo714/Weather-Bot.git
 cd Weather-Bot
 ```
-### 2. Установка зависимостей
+
+### 2. Настройка переменных окружения
+Создайте .venv и установите
+```bash
+python3 -m venv .venv
+.venv/Scripts/activate
+```
+### 3. Установка зависимостей
 Обычная установка:
 
 ```bash
@@ -42,12 +49,7 @@ pip install --force-reinstall -v "requests==2.32.5":
 ---
 
 
-### 3. Настройка переменных окружения
-Создайте .venv и установите
-```bash
-python3 -m venv .venv
-.venv/Scripts/activate
-```
+
 ## src/tokens.py
 ```python
 bot = "ваш_телеграм_токен"
