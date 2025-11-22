@@ -1,7 +1,7 @@
 import logging
 from aiogram import Bot, Dispatcher, executor
 from src.api_tokens import telegram_bot
-from src.message_handlers import register_handlers
+from src.register_handlers import register_handlers
 
 BOT_TOKEN = telegram_bot
 logging.basicConfig(level=logging.INFO)
@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot)
 
-# запускаем функции из src.message_handler.py
+# запускаем функции из src.register_handlers.py
 register_handlers(dp)
 
 if __name__ == '__main__':

@@ -68,7 +68,7 @@ python main.py
 
 ## 📁 Структура проекта
 - **├── main.py**
-- **|── src**
+- **├── src**
 - **├── README.md**
 - **└── requirements.txt**
 
@@ -83,5 +83,4 @@ python main.py
 
 📜 Лицензия
 Apache 2.0 License
-
-
+ 
