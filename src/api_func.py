@@ -12,8 +12,3 @@ def time_zone_api(lon: float, lat: float, token):
 def owm_current_api(city: str, token: str):
     """ do request to open_weather_map """
     return requests.get(f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={token}&units=metric')
-
-
-def owm_forecast_api(date: str, token: str, lat: float, lon: float):
-    """ do request to open_weather_map forecast """
-    return requests.get(f'https://api.openweathermap.org/data/3.0/onecall/day_summary?lat={lat}&lon={lon}&date={date}&appid={token}&units=metric')

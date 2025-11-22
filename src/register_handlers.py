@@ -1,6 +1,6 @@
 from aiogram import types
-from src.api_tokens import open_weather_map_token, time_zone_token  # -- Токены
-from handlers.main_message import weather_map
+from src.api_tokens import open_weather_map_token  # -- Токены
+from src.main_message import weather_map
 
 
 async def handle_start(message: types.Message):
