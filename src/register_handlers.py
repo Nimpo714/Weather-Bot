@@ -5,15 +5,15 @@ from src.servicec import emoji_decoder
 
 # смайлики для интерактива
 emoji_list = [
-    '🏢',  # City
+    '🌆',  # City
     '🗺',  # Region
     '🕓',  # Time Zone
     '📅',  # Local Time
     '⛅',  # Weather
     '🎭',  # Description
-    '🌡',  # Temp
+    '🌡️',  # Temp
     '👁️‍🗨️',  # Feels Like
-    '🌀'  # Wind Speed
+    '💨'  # Wind Speed
 ]
 decode_emoji = emoji_decoder(emoji_list)
 
