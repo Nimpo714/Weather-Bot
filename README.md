@@ -45,6 +45,7 @@ pip install -r requirements.txt
 ```bash
 pip install --force-reinstall -v "aiogram==2.23.1"
 pip install --force-reinstall -v "requests==2.32.5":
+pip install --force-reinstall -v "emoji==2.15.0"
 ```
 ---
 
